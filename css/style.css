@@ -35,6 +35,8 @@ body.light {
     --link-footer-border: 0.2em solid #f1f1f1;
     --link-footer-text: #f1f1f1;
 
+    --collapsed: #005C06;
+
 }
 
 body.high {
@@ -54,6 +56,8 @@ body.high {
     --link-body-text: #00FFFF;
     --link-footer-border: 0.2em solid #000089;
     --link-footer-text: #00004C;
+
+    --collapsed: #F2CA27;
 
 }
 main{
@@ -128,6 +132,23 @@ iframe html body div .c4{
 }
 .btn_acces:hover{
     background-color: var(--btn-Acces);
+    color: var(--background);
+}
+.accordion-item{
+    background-color: var(--background);
+    transition: background-color 1s ease;
+}
+.accordion-button{
+    background-color: var(--nav);
+    color: var(--nav-text);
+    transition: background-color 1s ease;
+}
+.accordion-button:not(.collapsed){
+    color: var(--dropdown);
+    background-color: var(--dropdown-text);
+}
+.accordion-button:focus{
+    background-color: var(--collapsed);
     color: var(--background);
 }
 .table{
