@@ -170,3 +170,15 @@ iframe html body div .c4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.frame_fb{
+  width: 750px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .frame_fb{
+    width: 350px;
+    height: 400px;
+  }
+}
+
